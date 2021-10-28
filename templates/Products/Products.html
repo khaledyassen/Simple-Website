@@ -1,0 +1,320 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block base %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <body>
+
+  <!--                                                Titlle                       -->
+
+  <h1 class="alert alert-dark"style="text-align: center; color:rgb(42, 110, 236);font-weight: bolder;">
+    Our place give you any animal you want online <i class="fas fa-kiss-wink-heart text-danger"></i> ..<br> 
+    We will show you some of this animals <i class="fas fa-smile text-danger"></i> ...</h1>
+    <div style="margin-bottom: 6rem;"></div>
+  <!--                                                Cards                       -->
+
+  <div class="container">
+    <!--                                  First animal                    -->
+
+    <div class="row">
+      <div class="col-lg-4 col-md-12" style="border-style: double;border-radius: 2rem;background-color:rgb(2, 3, 3);">
+        <div class="card bg-dark" >
+          <img src="{% static 'images/aniamals/animal3.jpg' %}" alt="" class="card-img-top">
+          <div class="card-body">
+            <h1 class="card-title text-danger"style="font-weight:bold;">White lion</h1>
+            <p class="card-title" style="color:rgb(58, 219, 165);font-weight:bold;font-size: larger;">
+              This animal is very good, strong
+              <br>The code to can buy it is <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span style="color:rgb(0, 255, 136);font-weight:bolder;">animal 003</span>
+            </p>
+            <a href="{% url 'BUYING' %}" class="btn btn-outline-danger"style="font-weight:bold;margin-left:6rem;
+            border-radius:3rem;width:8rem;">Buy it</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12"style="border-style: double;border-radius: 2rem;background-color:rgb(2, 3, 3);">
+        <div class="card bg-dark">
+          <img src="{% static 'images/aniamals/animal2.jpg' %}" alt="" class="card-img-top">
+          <div class="card-body">
+            <h1 class="card-title text-danger"style="font-weight:bold;">Black horse </h1>
+            <p class="card-title" style="color:rgb(58, 219, 165);font-weight:bold;font-size: larger;">
+              This animal is very good,fast and
+              The code to can buy it is <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span style="color:rgb(0, 255, 136);font-weight:bolder;">animal 002</span>
+            </p>
+            <a href="{% url 'BUYING' %}" class="btn btn-outline-danger"style="font-weight:bold;margin-left:6rem;
+            border-radius:3rem;width:8rem;">Buy it</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12"style="border-style: double;border-radius: 2rem;background-color:rgb(2, 3, 3);">
+        <div class="card bg-dark">
+          <img src="{% static 'images/aniamals/animal21.jpg' %}" alt="" class="card-img-top">
+          <div class="card-body">
+            <h1 class="card-title text-danger"style="font-weight:bold;">Snow wolf</h1>
+            <p class="card-title" style="color:rgb(58, 219, 165);font-weight:bold;font-size: larger;">This animal is very good, cooperation and
+              The code to can buy it is <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span style="color:rgb(0, 255, 136);font-weight:bolder;">animal 0021</span>
+            </p>
+            <a href="{% url 'BUYING' %}" class="btn btn-outline-danger"style="font-weight:bold;margin-left:6rem;
+            border-radius:3rem;width:8rem;">Buy it</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+
+
+    <!--                                  second animal                      -->
+
+    <div class="row">
+      <div class="col-lg-4 col-md-12"style="border-style: double;border-radius: 2rem;background-color:rgb(2, 3, 3);">
+        <div class="card bg-dark">
+          <img src="{% static 'images/aniamals/animal4.jpg' %}" alt="" class="card-img-top">
+          <div class="card-body">
+            <h1 class="card-title text-danger"style="font-weight:bold;">Small dogs</h1>
+            <p class="card-title" style="color:rgb(58, 219, 165);font-weight:bold;font-size: larger;">
+              This animal is very very good and helpful..<br>
+              The code to can buy it is <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span style="color:rgb(0, 255, 136);font-weight:bolder;">animal 004</span>..
+            </p>
+            <a href="{% url 'BUYING' %}" class="btn btn-outline-danger"style="font-weight:bold;margin-left:6rem;
+            border-radius:3rem;width:8rem;">Buy it</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12"style="border-style: double;border-radius: 2rem;background-color:rgb(2, 3, 3);">
+        <div class="card bg-dark">
+          <img src="{% static 'images/aniamals/animal5.jpg' %}" alt="" class="card-img-top">
+          <div class="card-body">
+            <h1 class="card-title text-danger"style="font-weight:bold;">Small monkey</h1>
+            <p class="card-title" style="color:rgb(58, 219, 165);font-weight:bold;font-size: larger;">
+              This animal is very good and funny..
+              The code to can buy it is <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span style="color:rgb(0, 255, 136);font-weight:bolder;">animal 005</span>..
+            </p>
+            <a href="{% url 'BUYING' %}" class="btn btn-outline-danger"style="font-weight:bold;margin-left:6rem;
+            border-radius:3rem;width:8rem;">Buy it</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12"style="border-style: double;border-radius: 2rem;background-color:rgb(2, 3, 3);">
+        <div class="card bg-dark">
+          <img src="{% static 'images/aniamals/animal20.jpg' %}" alt="" class="card-img-top">
+          <div class="card-body">
+            <h1 class="card-title text-danger"style="font-weight:bold;">Big dogs</h1>
+            <p class="card-title" style="color:rgb(58, 219, 165);font-weight:bold;font-size: larger;">
+              This animal is very good and amusing..
+              The code to can buy it is <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span style="color:rgb(0, 255, 136);font-weight:bolder;">animal 0020</span>..
+            </p>
+            <a href="{% url 'BUYING' %}" class="btn btn-outline-danger"style="font-weight:bold;margin-left:6rem;
+            border-radius:3rem;width:8rem;">Buy it</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+    <!--                                  third animal                            -->
+
+    <div class="row">
+      <div class="col-lg-4 col-md-12"style="border-style: double;border-radius: 2rem;background-color:rgb(2, 3, 3);">
+        <div class="card bg-dark">
+          <img src="{% static 'images/aniamals/animal7.jpg' %}" alt="" class="card-img-top">
+          <div class="card-body">
+            <h1 class="card-title text-danger"style="font-weight:bold;">Nice cats</h1>
+            <p class="card-title" style="color:rgb(58, 219, 165);font-weight:bold;font-size: larger;">
+              This animal is very good and beautfull..
+              The code to can buy it is <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span style="color:rgb(0, 255, 136);font-weight:bolder;">animal 007</span>..
+            </p>
+            <a href="{% url 'BUYING' %}" class="btn btn-outline-danger"style="font-weight:bold;margin-left:6rem;
+            border-radius:3rem;width:8rem;">Buy it</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12"style="border-style: double;border-radius: 2rem;background-color:rgb(2, 3, 3);">
+        <div class="card bg-dark">
+          <img src="{% static 'images/aniamals/animal8.jpg' %}" alt="" class="card-img-top">
+          <div class="card-body">
+            <h1 class="card-title text-danger"style="font-weight:bold;">Different birds</h1>
+            <p class="card-title" style="color:rgb(58, 219, 165);font-weight:bold;font-size: larger;">
+              This animal is very good and have anice voice..
+              The code to can buy<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span style="color:rgb(0, 255, 136);font-weight:bolder;">animal 008</span>..
+            </p>
+            <a href="{% url 'BUYING' %}" class="btn btn-outline-danger"style="font-weight:bold;margin-left:6rem;
+            border-radius:3rem;width:8rem;">Buy it</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12"style="border-style: double;border-radius: 2rem;background-color:rgb(2, 3, 3);">
+        <div class="card bg-dark">
+          <img src="{% static 'images/aniamals/animal17.jpg' %}" alt="" class="card-img-top">
+          <div class="card-body">
+            <h1 class="card-title text-danger"style="font-weight:bold;">Nice squirrel</h1>
+            <p class="card-title" style="color:rgb(58, 219, 165);font-weight:bold;font-size: larger;">
+              This animal is very good, important  
+              The code to can buy it is <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span style="color:rgb(0, 255, 136);font-weight:bolder;">animal 0017</span>..
+            </p>
+            <a href="{% url 'BUYING' %}" class="btn btn-outline-danger"style="font-weight:bold;margin-left:6rem;
+            border-radius:3rem;width:8rem;">Buy it</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+    <!--                                  fourth animal                              -->
+
+    <div class="row"> 
+      <div class="col-lg-4 col-md-12"style="border-style: double;border-radius: 2rem;background-color:rgb(2, 3, 3);">
+        <div class="card bg-dark">
+          <img src="{% static 'images/aniamals/animal10.jpg' %}" alt="" class="card-img-top">
+          <div class="card-body">
+            <h1 class="card-title text-danger"style="font-weight:bold;">Great elephant</h1>
+            <p class="card-title" style="color:rgb(58, 219, 165);font-weight:bold;font-size: larger;">
+              This animal is very good and great animal
+              The code to can buy it is <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span style="color:rgb(0, 255, 136);font-weight:bolder;">animal 0010</span>..
+            </p>
+            <a href="{% url 'BUYING' %}" class="btn btn-outline-danger"style="font-weight:bold;margin-left:6rem;
+            border-radius:3rem;width:8rem;">Buy it</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12"style="border-style: double;border-radius: 2rem;background-color:rgb(2, 3, 3);">
+        <div class="card bg-dark">
+          <img src="{% static 'images/aniamals/animal18.jpg' %}" alt="" class="card-img-top">
+          <div class="card-body">
+            <h1 class="card-title text-danger"style="font-weight:bold;">Good goat</h1>
+            <p class="card-title" style="color:rgb(58, 219, 165);font-weight:bold;font-size: larger;">
+              This animal is very good and useful
+              The code to can buy it is <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span style="color:rgb(0, 255, 136);font-weight:bolder;">animal 0018</span>..
+            </p>
+            <a href="{% url 'BUYING' %}" class="btn btn-outline-danger"style="font-weight:bold;margin-left:6rem;
+            border-radius:3rem;width:8rem;">Buy it</a>/a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12"style="border-style: double;border-radius: 2rem;background-color:rgb(2, 3, 3);">
+        <div class="card bg-dark">
+          <img src="{% static 'images/aniamals/animal12.jpg' %}" alt="" class="card-img-top">
+          <div class="card-body">
+            <h1 class="card-title text-danger"style="font-weight:bold;">Berfect bear </h1>
+            <p class="card-title" style="color:rgb(58, 219, 165);font-weight:bold;font-size: larger;">
+              This animal is very good, perfect shape, good and important <br>
+              The code to can buy it is <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span style="color:rgb(0, 255, 136);font-weight:bolder;">animal 0012</span>..
+            </p>
+            <a href="{% url 'BUYING' %}" class="btn btn-outline-danger"style="font-weight:bold;margin-left:6rem;
+            border-radius:3rem;width:8rem;">Buy it</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+    <!--                                  last animal                              -->
+
+    <div class="row">
+      <div class="col-lg-4 col-md-12"style="border-style: double;border-radius: 2rem;background-color:rgb(2, 3, 3);">
+        <div class="card bg-dark">
+          <img src="{% static 'images/aniamals/animal13.jpg' %}" alt="" class="card-img-top">
+          <div class="card-body">
+            <h1 class="card-title text-danger"style="font-weight:bold;">Slow turtle</h1>
+            <p class="card-title" style="color:rgb(58, 219, 165);font-weight:bold;font-size: larger;">
+              This animal is very good and slow
+              The code to can buy it is <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span style="color:rgb(0, 255, 136);font-weight:bolder;">animal 0013</span>..
+            </p>
+            <a href="{% url 'BUYING' %}" class="btn btn-outline-danger"style="font-weight:bold;margin-left:6rem;
+            border-radius:3rem;width:8rem;">Buy it</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12"style="border-style: double;border-radius: 2rem;background-color:rgb(2, 3, 3);">
+        <div class="card bg-dark">
+          <img src="{% static 'images/aniamals/animal14.jpg' %}" alt="" class="card-img-top">
+          <div class="card-body">
+            <h1 class="card-title text-danger"style="font-weight:bold;">Amusing panda</h1>
+            <p class="card-title" style="color:rgb(58, 219, 165);font-weight:bold;font-size: larger;">
+              This animal is very good and
+              The code to can buy it is <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span style="color:rgb(0, 255, 136);font-weight:bolder;">animal 0014</span>..
+            </p>
+            <a href="{% url 'BUYING' %}" class="btn btn-outline-danger"style="font-weight:bold;margin-left:6rem;
+            border-radius:3rem;width:8rem;">Buy it</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12"style="border-style: double;border-radius: 2rem;background-color:rgb(2, 3, 3);">
+        <div class="card bg-dark">
+          <img src="{% static 'images/aniamals/animal15.jpg' %}" alt="" class="card-img-top">
+          <div class="card-body">
+            <h1 class="card-title text-danger"style="font-weight:bold;">Baghbaghan</h1>
+            <p class="card-title" style="color:rgb(58, 219, 165);font-weight:bold;font-size: larger;">
+              This animal is very good and funny
+              The code to can buy it is <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span style="color:rgb(0, 255, 136);font-weight:bolder;">animal 0015</span>..
+            </p>
+            <a href="{% url 'BUYING' %}" class="btn btn-outline-danger"style="font-weight:bold;margin-left:6rem;
+            border-radius:3rem;width:8rem;">Buy it</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+  </div>
+  <!--                                    slide                      -->
+  <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="{% static 'images/aniamals/animal1.jpg' %}" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{% static 'images/aniamals/animal6.jpg' %}" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block"style="width:100%;height:15%" src="{% static 'images/aniamals/animal16.jpg' %}" alt="Fourth slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{% static 'images/aniamals/animal19.jpg' %}" alt="Fifth slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{% static 'images/aniamals/animal9.jpg' %}" alt="Sexth slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <h4 style="margin:10rem 25rem 0rem;font-weight: bold; font-size: 2.5rem;color:rgb(42, 110, 236);">
+    There are another animals if you want to see it enter this link <i class="fas fa-arrow-alt-circle-right"></i>
+    <a href="https://unsplash.com/wallpapers/animals" style="color: red;">Another animals</a>
+  </h4>
+  <div style="margin-bottom: 10rem;"></div>
+</body>
+</body>
+</html>
+{% endblock base %}

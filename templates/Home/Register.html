@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <title>Register</title>
+  <style>
+    body{
+      background-color:black;
+    }
+    form{
+      color:red;
+      font-weight:bold;
+      font-size:larger;
+      height: 33rem;
+      padding:2rem;
+      padding-left: 3rem;;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container" style="margin:12rem 38rem;
+  background-color: rgb(2, 240, 180);width:25rem;border-radius: 4rem;">
+    <form method="POST">
+      {{form.as_p}}
+      {% csrf_token %}
+      <!-- userName -->
+      <div class="form-group">
+        <label>UserName</label>
+        {{user_register.username}}
+      </div>
+      <!-- Email -->
+      <div class="form-group">
+        <label>Email address</label>
+        {{user_register.email}}
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <!-- password1 -->
+      <div class="form-group">
+        <label>Password1</label>
+        {{user_register.password1}}
+      </div>
+      <!-- password2 -->
+      <div class="form-group">
+        <label>Cnfirm Password</label>
+        {{user_register.password2}}
+      </div>
+      <button type="submit" style="width: 14rem;border-radius: 4rem;" class="btn btn-outline-danger">Submit</button>
+      <div class="d-flex justify-content-center links">
+        Already have an account? <a href="{% url 'LOGINPAGE' %}" class="ml-2">Login</a>
+      </div>
+      {{user_register.errors}}
+  </div>
+  </form>
+  <script src="{% static 'js/1.js' %}"></script>
+  <script src="{% static 'js/2.js' %}"></script>
+  <script src="{% static 'js/3.js' %}"></script>
+  <script src="{% static 'js/4.js' %}"></script>
+  <script src="{% static 'js/5.js' %}"></script>
+</body>
+</html>

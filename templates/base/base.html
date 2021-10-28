@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <style>
+    body{
+      background-color: rgb(12, 12, 12);
+    }
+  </style>
+  <title>Animials</title>
+</head>
+<body>
+  <script src="{% static 'js/1.js' %}"></script>
+  <script src="{% static 'js/2.js' %}"></script>
+  <script src="{% static 'js/3.js' %}"></script>
+  <script src="{% static 'js/4.js' %}"></script>
+  <script src="{% static 'js/5.js' %}"></script>
+</body>
+</html>
+{% include 'base/header.html' %}
+{% block base %}
+{% endblock base %}
+{% include 'base/footer.html' %}

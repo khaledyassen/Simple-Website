@@ -1,0 +1,51 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block base %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShowProducts</title>
+</head>
+<body>
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col" style="color:red;font-weight: bold; font-size: larger;">Email</th>
+        <th scope="col" style="color:red;font-weight: bold; font-size: larger;">Password</th>
+        <th scope="col" style="color:red;font-weight: bold; font-size: larger;">phoneNumber</th>
+        <th scope="col" style="color:red;font-weight: bold; font-size: larger;">Address</th>
+        <th scope="col" style="color:red;font-weight: bold; font-size: larger;">city</th>
+        <th scope="col" style="color:red;font-weight: bold; font-size: larger;">state</th>
+        <th scope="col" style="color:red;font-weight: bold; font-size: larger;">Code</th>
+        <th scope="col" style="color:red;font-weight: bold; font-size: larger;">Image</th>
+        <th scope="col" style="color:red;font-weight: bold; font-size: larger;">dateTime</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for data in bpforms %}
+        <tr>
+          <th scope="row" style="color:red;font-weight: bold; font-size: larger;">{{data.Email}}</th>
+          <td>{{data.Password}}</td>
+          <td>{{data.phoneNumber}}</td>
+          <td>{{data.Address}}</td>
+          <td>{{data.city}}</td>
+          <td>{{data.state}}</td>
+          <td>{{data.Code}}</td>
+          <td><img src="{{data.Img.url}}" width="200px" height="200px" alt="" ></a></td>
+          <td>{{data.dateTime}}</td>
+          <td>
+            <br>
+            <a class="btn btn-outline-danger" style="font-weight: bold; font-size:1.5rem;"
+            href="{% url 'UPDATERODUCTS' data.id %}">Update</a><br><br><br>
+            <a class="btn btn-outline-danger" style="font-weight: bold; font-size:1.7rem;"
+            href="{% url 'DELETEPRODUCTS' data.id %}">Delete</a>
+          </td>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>
+{% endblock base %}

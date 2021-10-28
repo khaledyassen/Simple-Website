@@ -1,0 +1,28 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block base %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UserProfile</title>
+</head>
+<body>
+  <div class="row text-info" style="margin-top: 4rem;">
+    <div class="col-md-12">
+      <div class="card card-body bg-dark">
+        <form action="" method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+          {{upf}}
+          <input type="submit" class="btn btn-outline-info"
+          style="width: 150px;margin-left:35rem;border-radius:2rem" vlaue="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div style="margin-bottom: 8rem;"></div>
+</body>
+</html>
+{% endblock base %}
