@@ -1,4 +1,4 @@
-# animalsweb
+# animals web
 This is Web application about buying animals online 
 
 # Language
