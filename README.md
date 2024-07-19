@@ -1,6 +1,10 @@
 # animals website
-This is Web application about buying animals online 
+This is a Web application.
 
 # Language
 
-This Web application written in Django Framework which is framework for python programming language 
+This Web application is written in Django Framework which is a framework for the Python programming language 
+
+# Reference
+Here is the video of it
+https://youtu.be/3xtYvwxG33Y
