@@ -1,5 +1,5 @@
-# animals website
-This is a Web application.
+# Simple Web Application
+This is a Web application for online animal trading.
 
 # Language
 
